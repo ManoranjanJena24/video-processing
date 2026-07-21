@@ -4,6 +4,8 @@ const express = require("express");
 const uploadRoutes = require("./src/routes/uploadRoute");
 const connectDB = require("./src/config/db.js");
 
+require("./src/config/redis");
+
 const app = express();
 
 connectDB();
